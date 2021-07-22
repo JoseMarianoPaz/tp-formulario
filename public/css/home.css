@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* 
+font-family: 'Roboto', sans-serif;
+*/ 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font-family: 'Roboto', sans-serif;
+    --fontSize-texto: 12px;
+    --fontsize-titulares:24px;
+    --fontSize-precios:18px;
+    --fontSize-descripcion:16px;
+    --fontSize-descuentos:16px;
+  }
+:root{
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-grisOscuro:#666;
+    --color-Grisclaro: #ebebeb;
+    --color-Verde: #39b54a;;
+}
+
+/*header*/
+
+body{
+    font-family: var(--font-family);
+    background-color:var(--color-Grisclaro); 
+}
+body header{
+    background-color:var(--color-amarillo);
+    padding-bottom: 22px ;
+}
+header div.header1{
+    display: flex;
+    align-items:center;
+flex-wrap: wrap;
+justify-content:space-evenly;
+padding-top: 25px;
+}
+header .header1 img{
+width: 40%;
+padding-left: 20px;
+}
+
+body header .buscador, .buscador i{
+display: flex;
+margin: 5px 0px;
+justify-content: center;
+background-color:white; 
+
+}
+body header .buscador input{
+   width: 50%;
+   border:none;
+   flex-grow: 0.50;
+ 
+}
+body header section .cuota , .compra-en-cuotas{
+    font-size: 12px;
+    text-align: center;
+}
+.barra .menu a{
+    text-decoration: none;
+   color: black;
+   padding: 0%;
+}
+.barra .menu .lista1{
+   font-size:var(--fontSize-texto);
+   padding: 2% 0%;
+   list-style: none;
+   display: none;
+   
+}
+.barra .menu .lista2{
+    font-size:var(--fontSize-texto);
+    padding: 2% 0%;
+    list-style: none;
+    display: none;
+    
+ }
+body header .burguer-menu {
+    text-align: center;
+
+  
+}
+body header .burguer-menu .burguer{
+    display: inline-block;
+    font-size: 20px;
+    background-color: var(--color-celeste);
+    color:var(--color-Grisclaro);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/*main*/
+body main{
+    margin: 0 auto;
+    width: 90%;
+    display: block;
+    /*ver body main article inquietud en el border de main */
+}
+body main div.banner img{
+    width: 100%;
+} 
+body main section img{
+    width: 100%;
+}
+body main section.cuerpo{
+    margin-top: 0 auto;
+    padding: 10px;
+}
+body main section.cuerpo h2{
+    font-size: var(--fontsize-titulares);;
+    padding: 5px 12px 10px;
+    width: 100%;
+     
+}
+body main i{
+    color: var(--color-Verde);
+    border-radius: 50%;
+    border:solid 1px var(--color-Verde);
+    background-color: white;
+    padding: 5px 6px;
+    width: 34px;
+    height: 30px;
+    order: 1;
+    margin-top: -40px;
+    margin-right: 10px;
+}
+body main section h4.oferta{
+    font-size: var(--fontsize-titulares);;
+    border-left: 13px solid var(--color-Grisclaro);
+    width: 100%;
+}
+body main article{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    /*ver el porque el borde no lo toma al 100% sin tner el width al 111%*/
+}
+body main section article div.producto div.pdd div{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+}
+
+body main section div h4{
+    background-color: white;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+main section article .producto .precio{
+    font-size:var(--fontSize-precios);
+    flex-grow: 0.30;
+    display: flex;
+   justify-content: space-around;
+}
+main section article .producto .descuento{
+    font-size: var(--fontSize-descuentos);
+    color: var(--color-Verde);
+    padding-bottom: 2px;
+    display: flex;
+    flex-grow: 0.70;
+}
+
+/*footer*/
+
+footer {
+    background-color: white;
+}
+
+footer .icon {
+    padding-top: 30px;
+    text-align: center;
+    color: var(--color-celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+footer h3{
+    font-size: var(--fontSize-descripcion);
+    text-align: center;
+}
+footer p{
+    font-size: var(--fontSize-texto);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+@media (min-width:750px) {
+    body header{
+        background-color:var(--color-amarillo);
+        padding-bottom: 0px ;
+    }
+    header .header1 img{
+        width: 30%;
+        }
+        
+    header div.header1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+    }
+    body header .buscador input{
+        flex-grow: 1;
+    }
+    .compra-en-cuotas{
+        padding-right: 25px;
+    }
+    body header .burguer-menu .burguer{
+        display: none;
+    }
+   
+    .barra .menu .lista1 {
+        font-size:var(--fontSize-texto);
+        list-style: none;
+        display:flex;
+        justify-content: space-evenly;
+        flex-grow: 0.25
+     }
+     .barra .menu .lista2 {
+        font-size:var(--fontSize-texto);
+        list-style: none;
+        display:flex;
+        justify-content: space-evenly;
+        flex-grow: 0.25
+     }
+     nav.menu{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+     
+     }
+
+    body main section.cuerpo{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    body main section article{
+        width:50%;
+    }
+
+    body main section article div.producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+    }
+
+@media (min-width:1020px){
+    body header{
+        background-color:var(--color-amarillo);
+        padding-bottom: 0px ;
+    }
+    header .header1 img{
+        width: 30%;
+        }
+        body header .buscador, .buscador i {
+        width:30%;
+        }
+        
+    header div.header1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 25px;
+    }
+    body header .buscador input{
+        flex-grow: 1;
+    }
+    .compra-en-cuotas{
+        padding-right: 25px;
+    }
+    body header .burguer-menu .burguer{
+        display: none;
+    }
+   
+    .barra .menu .lista1 {
+        font-size:var(--fontSize-texto);
+        list-style: none;
+        display:flex;
+        justify-content: space-evenly;
+        flex-grow: 0.25
+     }
+     .barra .menu .lista2 {
+        font-size:var(--fontSize-texto);
+        list-style: none;
+        display:flex;
+        justify-content: space-evenly;
+        flex-grow: 0.25
+     }
+     nav.menu{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+     
+     }
+
+    body main section.cuerpo{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    body main section article{
+        width:25%;
+    }
+
+    body main section article div.producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+    }
+
+/*van  antes del @media son pruebas*/
+/*box-shadow: 0px 0px 10px rgb(100, 100, 100); me falta ponerlo*/
+
+/*body main{
+    display: inline-block;
+    width: 95%;
+    margin-left: 22px;
+*/ 
+ /*encontrar otra forma de centar*/

@@ -1,0 +1,37 @@
+body main.login form{
+    margin: 25px 0px;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    }
+    body main.login form .box-form{
+        margin: 15px 0px;
+        width : 80%;
+         }
+         body main.login form .box-u-e{
+             display:flex;
+             flex-direction: column;
+             align-items: center;
+         }
+         body main.login form .box-form input{
+            height: 40px;
+            width: 100%;
+            border:none
+      }
+      main.login form div.box-button{
+          display:flex;
+          justify-content: center
+      }
+      main.login form div.box-button a{
+       width: 80%;
+    }
+    main.login form div.box-button button{
+    width:100%;
+    margin: 20px 0px; 
+    border:none;
+    background-color:rgb(66, 66, 248);
+    height: 40px;
+    color:white
+      }
+  
+    
